@@ -1,0 +1,25 @@
+{%- if localization.available_languages.size > 1 -%}
+  <nav class="language-switcher" aria-label="{{ 'general.language_switcher.aria_label' | t }}">
+    <ul class="language-switcher__list" role="list">
+      {%- for language in localization.available_languages -%}
+        <li>
+          {%- if language.iso_code == localization.language.iso_code -%}
+            <span class="language-switcher__link language-switcher__link--active" aria-current="true">
+              {{- language.endonym_name | capitalize -}}
+              <span class="visually-hidden">{{ 'general.language_switcher.current_language' | t }}</span>
+            </span>
+          {%- else -%}
+            <a
+              class="language-switcher__link link link--text focus-inset"
+              href="{{ language.url }}"
+              hreflang="{{ language.iso_code }}"
+              lang="{{ language.iso_code }}"
+            >
+              {{- language.endonym_name | capitalize -}}
+            </a>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+{%- endif -%}

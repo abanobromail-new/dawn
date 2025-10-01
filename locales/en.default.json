@@ -55,6 +55,10 @@
       "next_slide": "Slide right",
       "previous_slide": "Slide left",
       "name": "Slider"
+    },
+    "language_switcher": {
+      "aria_label": "Change language",
+      "current_language": "Current language"
     }
   },
   "newsletter": {

@@ -1,0 +1,318 @@
+html[dir='rtl'] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir='rtl'] .page-width,
+html[dir='rtl'] .header,
+html[dir='rtl'] .footer,
+html[dir='rtl'] .section,
+html[dir='rtl'] .shopify-section,
+html[dir='rtl'] .cart-drawer,
+html[dir='rtl'] .cart-notification,
+html[dir='rtl'] .menu-drawer,
+html[dir='rtl'] .slider,
+html[dir='rtl'] main,
+html[dir='rtl'] form,
+html[dir='rtl'] .grid {
+  direction: rtl;
+}
+
+html[dir='rtl'] .text-left {
+  text-align: left;
+}
+
+html[dir='rtl'] .text-right,
+html[dir='rtl'] .card,
+html[dir='rtl'] .card-information,
+html[dir='rtl'] .card__information,
+html[dir='rtl'] .product__info-wrapper,
+html[dir='rtl'] .product__info-container,
+html[dir='rtl'] .product__info-container .share-button,
+html[dir='rtl'] .cart-item__details,
+html[dir='rtl'] .cart-item__totals,
+html[dir='rtl'] .totals,
+html[dir='rtl'] .footer-block,
+html[dir='rtl'] .language-switcher {
+  text-align: right;
+}
+
+html[dir='rtl'] .header__icons {
+  justify-self: start;
+  padding-right: 0;
+  padding-left: 0.8rem;
+}
+
+html[dir='rtl'] .header__icon,
+html[dir='rtl'] .header__icons .shopify-app-block {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+html[dir='rtl'] .header__inline-menu {
+  margin-left: 0;
+  margin-right: -1.2rem;
+}
+
+@media screen and (min-width: 990px) {
+  html[dir='rtl'] .header__inline-menu > .list-menu--inline {
+    justify-content: flex-end;
+  }
+
+  html[dir='rtl'] .header--top-center .header__inline-menu,
+  html[dir='rtl'] .header--top-center .header__heading-link {
+    margin-right: 0;
+  }
+
+  html[dir='rtl'] .header--middle-left .header__inline-menu {
+    margin-right: 0;
+  }
+}
+
+html[dir='rtl'] .header__menu-item {
+  text-align: right;
+}
+
+html[dir='rtl'] .header__menu-item .icon-caret,
+html[dir='rtl'] .header__icon .icon-caret,
+html[dir='rtl'] .menu-drawer__menu-item .icon-caret,
+html[dir='rtl'] .menu-drawer__close-button .icon-arrow,
+html[dir='rtl'] .language-switcher__link svg,
+html[dir='rtl'] .breadcrumb__item .icon {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .button .icon-arrow,
+html[dir='rtl'] .link .icon-arrow,
+html[dir='rtl'] .menu-drawer__menu-item .icon-arrow,
+html[dir='rtl'] .predictive-search__item .icon-arrow,
+html[dir='rtl'] .slider-button .icon-arrow {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .header__heading,
+html[dir='rtl'] .header__heading-link {
+  text-align: right;
+}
+
+html[dir='rtl'] .header__search,
+html[dir='rtl'] predictive-search,
+html[dir='rtl'] .predictive-search {
+  text-align: right;
+}
+
+html[dir='rtl'] .menu-drawer__menu-item {
+  text-align: right;
+}
+
+html[dir='rtl'] .menu-drawer summary.menu-drawer__menu-item {
+  padding-right: 3rem;
+  padding-left: 5.2rem;
+}
+
+html[dir='rtl'] .menu-drawer__menu-item > .svg-wrapper {
+  right: auto;
+  left: 3rem;
+}
+
+html[dir='rtl'] .js .menu-drawer__submenu {
+  left: auto;
+  right: 0;
+  transform: translateX(-100%);
+}
+
+html[dir='rtl'] .menu-drawer__inner-submenu,
+html[dir='rtl'] .menu-drawer__submenu .menu-drawer__menu {
+  text-align: right;
+}
+
+html[dir='rtl'] .menu-drawer__close-button {
+  justify-content: flex-end;
+  text-align: right;
+  padding: 1.2rem 3rem 1.2rem 2.6rem;
+}
+
+html[dir='rtl'] .menu-drawer__close-button .svg-wrapper {
+  margin-right: 0;
+  margin-left: 1rem;
+  transform: rotate(-180deg);
+}
+
+html[dir='rtl'] .drawer__close,
+html[dir='rtl'] .drawer__close .icon {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .card {
+  --text-alignment: right;
+}
+
+html[dir='rtl'] .card--horizontal {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .card__badge {
+  left: auto;
+  right: var(--image-padding);
+}
+
+html[dir='rtl'] .card__content,
+html[dir='rtl'] .card-information,
+html[dir='rtl'] .product__info-container,
+html[dir='rtl'] .price,
+html[dir='rtl'] .product__accordion,
+html[dir='rtl'] .product__accordion .accordion__content {
+  text-align: right;
+}
+
+html[dir='rtl'] .product__accordion summary .icon-caret,
+html[dir='rtl'] details[open] > summary .icon-caret {
+  transform: scaleX(-1) rotate(180deg);
+}
+
+html[dir='rtl'] .quantity__button svg,
+html[dir='rtl'] .quick-add__submit svg,
+html[dir='rtl'] .product__modal-opener svg {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .slider-buttons {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .slider-button--next .icon {
+  transform: rotate(90deg);
+}
+
+html[dir='rtl'] .slider-button--prev .icon {
+  transform: rotate(-90deg);
+}
+
+html[dir='rtl'] .slider-button--next:not([disabled]):hover .icon {
+  transform: rotate(90deg) scale(1.1);
+}
+
+html[dir='rtl'] .slider-button--prev:not([disabled]):hover .icon {
+  transform: rotate(-90deg) scale(1.1);
+}
+
+html[dir='rtl'] .announcement-bar .slider-button--next {
+  margin-right: 0;
+  margin-left: -1.5rem;
+}
+
+html[dir='rtl'] .announcement-bar .slider-button--prev {
+  margin-left: 0;
+  margin-right: -1.5rem;
+}
+
+html[dir='rtl'] .pagination__list,
+html[dir='rtl'] .breadcrumbs,
+html[dir='rtl'] .product__info-wrapper,
+html[dir='rtl'] .product__media-wrapper,
+html[dir='rtl'] .product__media-list {
+  direction: rtl;
+}
+
+html[dir='rtl'] .product-recommendations,
+html[dir='rtl'] .related-products,
+html[dir='rtl'] .featured-collection,
+html[dir='rtl'] .collection,
+html[dir='rtl'] .product-grid {
+  text-align: right;
+}
+
+html[dir='rtl'] .cart-drawer__collection {
+  margin: 0 0 1.5rem 2.5rem;
+}
+
+html[dir='rtl'] .cart-drawer .cart-item__nested-line .cart-item__image {
+  float: left;
+}
+
+html[dir='rtl'] .cart-drawer .cart-items thead th:nth-child(2) {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: right;
+}
+
+html[dir='rtl'] .cart-drawer .cart-item > td + td {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+html[dir='rtl'] .cart-drawer .cart-item__totals {
+  justify-content: flex-start;
+}
+
+html[dir='rtl'] .cart-drawer .totals {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .cart-drawer .totals > * + * {
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+html[dir='rtl'] .cart-drawer .tax-note,
+html[dir='rtl'] .cart-drawer .totals__subtotal {
+  text-align: right;
+}
+
+html[dir='rtl'] .cart-drawer__footer .button,
+html[dir='rtl'] .cart-drawer__footer .shopify-payment-button {
+  width: 100%;
+}
+
+html[dir='rtl'] .quantity-popover,
+html[dir='rtl'] .quantity-popover__content,
+html[dir='rtl'] .quantity-popover__info {
+  text-align: right;
+}
+
+html[dir='rtl'] .quantity-popover__info-button .icon {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .search__input {
+  text-align: right;
+}
+
+html[dir='rtl'] .share-button,
+html[dir='rtl'] .footer__localization {
+  justify-content: flex-end;
+}
+
+html[dir='rtl'] .language-switcher__list {
+  justify-content: flex-end;
+}
+
+html[dir='rtl'] .footer__language-switcher,
+html[dir='rtl'] .header__language-switcher {
+  text-align: right;
+}
+
+html[dir='rtl'] .breadcrumb__item + .breadcrumb__item::before {
+  transform: scaleX(-1);
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+html[dir='rtl'] .pagination__item--next .icon,
+html[dir='rtl'] .pagination__item--prev .icon {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .customer button .icon,
+html[dir='rtl'] .customer .icon-caret {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .modal__toggle-open,
+html[dir='rtl'] .modal__toggle-close {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .modal__close-button .icon {
+  transform: scaleX(-1);
+}
